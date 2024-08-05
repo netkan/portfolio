@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+
+:root{
+    --cor-principal: #10142c;
+    --cor-secundaria: #ff271f;
+    --cor-terciaria: #7ce9ec;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--cor-principal);
+    color: var(--cor-terciaria);
+    box-sizing: border-box;
+}
+
+.menus{
+    display: flex;
+    gap: 80px;
+}
+a{
+    text-decoration: none;
+}
+.navegacao{
+  font-family: 'montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: var(--cor-secundaria);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.navegacao:hover{
+    font-family: 'montserrat', sans-serif;
+    font-size: 1.6rem;
+    color: rgb(41, 105, 223);
+}
+
+.cabeca{
+    padding: 2% 0% 0% 12%; 
+   
+}
+.link{
+    color:var(--cor-terciaria);
+    text-decoration: none;
+    border-radius: 8px;
+    width: 50%;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 21.5px  0;
+    border: solid #a0e9e9;
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
+}
+strong{
+    color: var(--cor-secundaria);
+}
+
+.cor{
+    color: var(--cor-secundaria);
+}
+.subititulo{
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+.botao{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    text-align: center;
+}
+.link:hover{
+    color: rgb(218, 14, 14);
+    border: #2f2cdf solid;
+}
+.foto_perfil{
+    width: 40%;
+    height: 40%;
+}
+.menu{
+    padding: 5% 12%;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+}
+.texto{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.titulo{
+   font-size: 2,25rem;
+   font-family: "Krona One", sans-serif;
+   font-weight: 200;
+}
+.conteudo{
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+ .conteudo2{
+    font-size: 1.5rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+ }
+
+ img{
+    height: 38px;
+    width: 38px;
+ }
+
+ footer{
+    padding: 28px;
+    background-color: rgb(0, 0, 0);
+    color: var(--cor-secundaria);
+    text-align: center;
+ }
+
+ @media (max-width: 1200px ){
+    .menu{
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .cabeca{
+       padding: 10%;
+    }
+
+    .menus{
+        justify-content: center;
+    }
+    
+    .texto{
+        width: auto;
+    }
+
+    .foto_perfil{
+        width: 60%;
+        height: 60%;
+    }
+ }
